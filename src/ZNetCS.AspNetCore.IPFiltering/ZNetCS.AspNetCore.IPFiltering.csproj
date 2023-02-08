@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>ZNetCS.AspNetCore.IPFiltering</AssemblyName>
+    <TargetFrameworks>netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors />
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="IPAddressRange" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>
